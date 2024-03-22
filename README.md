@@ -1,4 +1,5 @@
-1. docker exec -it kafka bash
+1. First write command as : docker compose up, it will take several minutes to pull docker image for kafka and zookeper image.
+   Then write command as:  docker exec -it kafka bash
 
 2. To create a topic: kafka-topics.sh --bootstrap-server localhost:9092 --create --topic t_hello --partitions 1 --replication-factor 1
 
