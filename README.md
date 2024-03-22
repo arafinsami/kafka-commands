@@ -19,9 +19,9 @@
 
 10. Consumer group operation: 
 
-    kafka-consumer-groups.sh --bootstrap-server localhost:9092 --groups cg-dashboard --describe
-    kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group cg-notification --describe
-    kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
-    kafka-consumer-groups.sh --bootstrap-server localhost:9092 --groups cg-dashboard --execute --reset-offsets --to-offset 10 --topic t_commodity:0
-    kafka-consumer-groups.sh --bootstrap-server localhost:9092 --groups cg-dashboard --describe
-    Now cg-dashboard, will read data from offset 10
+    1. kafka-consumer-groups.sh --bootstrap-server localhost:9092 --groups cg-dashboard --describe
+    2. kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group cg-notification --describe
+    3. kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+    4. kafka-consumer-groups.sh --bootstrap-server localhost:9092 --groups cg-dashboard --execute --reset-offsets --to-offset 10 --topic t_commodity:0
+    5. kafka-consumer-groups.sh --bootstrap-server localhost:9092 --groups cg-dashboard --describe
+       Now cg-dashboard, will read data from offset 10
